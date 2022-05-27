@@ -13,7 +13,10 @@ public class runGame {
         Player p2 = desearilize();
         System.out.println(p2.getLives());
         System.out.println(p2.getCharacter().getName());
-        System.out.println(p2.getCharacter().addWeapon());
+        for (var weapon: p2.getCharacter().getWeapons()){
+            System.out.println(weapon.getName());
+            System.out.println(weapon.getSupplies());
+        }
 
     }
     //Serializacion

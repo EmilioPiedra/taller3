@@ -19,7 +19,9 @@ public class Character implements Serializable {
         this.name = name;
     }
 public void addWeapon (Weapon weapon){
-        weapons.add(weapon);
+        getWeapons().add(weapon);
 }
-
+    public List<Weapon> getWeapons() {
+        return weapons;
+    }
 }
